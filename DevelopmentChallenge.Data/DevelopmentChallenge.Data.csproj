@@ -12,6 +12,9 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
+    <LangVersion>latest</LangVersion>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Nullable>annotations</Nullable>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,17 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Conics\Circle.cs" />
-    <Compile Include="Models\Conics\Conics.cs" />
-    <Compile Include="Models\FormaGeometrica.cs" />
+    <Compile Include="Core\Enums\LanguageEnum.cs" />
+    <Compile Include="Models\Circle.cs" />
     <Compile Include="Models\GeometricForm.cs" />
-    <Compile Include="Models\Polygons\Quadrilaterals\Square.cs" />
-    <Compile Include="Models\Polygons\Quadrilaterals\Quadrilateral.cs" />
-    <Compile Include="Models\Polygons\Quadrilaterals\Rectangle.cs" />
-    <Compile Include="Models\Polygons\Quadrilaterals\Trapeze.cs" />
-    <Compile Include="Models\Polygons\Polygon.cs" />
-    <Compile Include="Models\Polygons\Triangle.cs" />
-    <Compile Include="Core\GeoFormReportGenerator.cs" />
+    <Compile Include="Models\Rectangle.cs" />
+    <Compile Include="Models\Square.cs" />
+    <Compile Include="Models\Trapeze.cs" />
+    <Compile Include="Models\Triangle.cs" />
+    <Compile Include="Core\Reports\GeoFormReportGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
